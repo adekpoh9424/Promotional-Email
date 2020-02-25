@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/442b64b644.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>The Impossible Whopper</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="nav-bar">
+        <div class="nav-logo"></div>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>RECIPE</li></a>
+          </ul>
+          <button type="button" class="btn">SIGN UP</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </div>
+      <div class="banner-title">
+        <h1>
+          Hello Dear Customer, We want You to Try Our brand New
+          <span>IMPOSSIBLE BURGER</span> 100% no meat. 50% OFF
+        </h1>
+        <h2 class="week"><span>This week Only</span></h2>
+        <button type="button" class="btn">EXPLORE</button>
+      </div>
+      <div class="vertical-bar">
+        <div class="search-icon">
+          <i class="fa fa-th-list"></i>
+          <i class="fa fa-search"></i>
+        </div>
+
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+      <div class="notifications">
+        <div class="contents">
+          <small>
+            Try our new Large size
+            <strong><span class="fruits">Kiwi Smoothie</span></strong> made from
+            the freshest fruits today for
+            <strong><span class="fruits">only $5</span></strong></small
+          >
+        </div>
+        <div class="notification-img">
+          <img src="./img/smoothie.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var show = document.getElementById("nav-links");
+      function showMenu() {
+        show.style.right = "0";
+      }
+
+      function closeMenu() {
+        show.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
